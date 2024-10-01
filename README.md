@@ -40,11 +40,26 @@ Feel free to browse through the notes and exercises for reference. These materia
 
 ## 🤝 Contribution
 
-If you are also taking the ST21955 module and would like to contribute, you are welcome! Please follow these guidelines:
+If you are also taking the ST21955 module and want to contribute, follow these simple steps:
 
-1. Fork this repository.
-2. Create a new branch for your contributions: `git checkout -b your-feature-name`.
-3. Submit a pull request with a description of your changes.
+1. **Fork this repository** by clicking the "Fork" button in the top-right corner of this page to create your own copy.
+2. **Clone your fork** to your local machine using:
+    ```bash
+    git clone https://github.com/[YourUsername]/[RepositoryName].git
+    ```
+3. **Create a new branch** for your changes:
+    ```bash
+    git checkout -b your-branch-name
+    ```
+4. **Add your changes** (notes, exercises, code) to the appropriate block folder, then commit and push:
+    ```bash
+    git add .
+    git commit -m "Your descriptive message"
+    git push origin your-branch-name
+    ```
+5. **Create a Pull Request** on GitHub from your forked repository. Click "New Pull Request" and submit your changes for review.
+
+Feel free to ask questions if you get stuck—contributing is a learning process!
 
 All contributions should be directly relevant to the ST21955 Programming for Data Science module.
 
