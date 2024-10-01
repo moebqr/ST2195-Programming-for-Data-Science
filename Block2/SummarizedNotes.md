@@ -1,3 +1,6 @@
+# Block 2: Data
+> [Mohamed Alderazi]: These notes are not in their final version (yet to add python related content). Feel free to contribute to the notes by making a change and a pull request.
+---
 # Data Types Overview
 - **Structured Data**: Organized in a tabular format (rows & columns). Examples: Stock prices, addresses, sensor data. Suitable for relational databases (RDBMS). Easier to search, organize, and analyze using statistical and machine learning tools.
 - **Semi-Structured Data**: Lacks the rigid structure of relational databases but contains organizational elements like tags (e.g., XML, JSON, Markdown files).
