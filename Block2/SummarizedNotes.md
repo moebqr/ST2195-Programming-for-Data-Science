@@ -1,14 +1,23 @@
 # Block 2: Data
-> [Mohamed Alderazi]: These notes are not in their final version (yet to add python related content). Feel free to contribute to the notes by making a change and a pull request.
+> [Mohamed Alderazi]: Feel free to fine-tune these notes by making a change and a pull request.
 
 ## Table of Contents
 1. [Data Types Overview](#data-types-overview)
-2. [File Formats for Data Exchange](#file-formats-for-data-exchange)
-3. [Import/Export of Data in R](#importexport-of-data-in-r)
-4. [Data Types and Structures in R](#data-types-and-structures-in-r)
-5. [Common Issues and Best Practices](#common-issues-and-best-practices)
-6. [Useful R Functions](#useful-r-functions)
-7. [Useful Links and Resources](#useful-links-and-resources)
+2. [Data Types and Structures](#data-types-and-structures)
+   - [Python Data Types](#python-data-types)
+     - [Basic Data Types](#basic-data-types)
+     - [Collection Types](#collection-types)
+   - [R Data Types](#r-data-types)
+3. [Libraries for Data Handling](#libraries-for-data-handling)
+   - [NumPy](#numpy)
+   - [Pandas](#pandas)
+4. [File Formats for Data Exchange](#file-formats-for-data-exchange)
+   - [Python Data Import/Export](#python-data-importexport)
+   - [R Data Import/Export](#importexport-of-data-in-r)
+5. [Data Types and Structures in R](#data-types-and-structures-in-r)
+6. [Common Issues and Best Practices](#common-issues-and-best-practices)
+7. [Useful R Functions](#useful-r-functions)
+8. [Useful Links and Resources](#useful-links-and-resources)
 
 ---
 
@@ -16,6 +25,80 @@
 - **Structured Data**: Organized in tabular format (rows & columns). Examples: Stock prices, addresses, sensor data. Suitable for relational databases (RDBMS).
 - **Semi-Structured Data**: Contains organizational elements like tags (e.g., XML, JSON, Markdown files) but lacks rigid structure of relational databases.
 - **Unstructured Data**: No predetermined structure. Examples: Text, images, audio. Often transformed into structured data for analysis.
+
+# Data Types and Structures
+
+## Python Data Types
+
+### Basic Data Types
+1. **Integer (int)**
+   - Whole numbers: `5`, `-17`
+   - No size limitation in Python 3
+
+2. **Float**
+   - Decimal numbers: `3.14`, `-0.001`
+   - Scientific notation: `2.5e-4`
+
+3. **String (str)**
+   - Text data: `"Hello"`, `'World'`
+   - Multi-line strings: `"""Triple quotes"""`
+   - Methods: `upper()`, `lower()`, `strip()`
+
+4. **Boolean (bool)**
+   - Values: `True` or `False`
+   - Operators: `and`, `or`, `not`
+
+### Collection Types
+1. **Lists**
+   - Ordered, mutable sequences: `[1, 2, 3]`
+   - Mixed types allowed: `[1, "hello", True]`
+   - Methods: `append()`, `extend()`, `pop()`
+
+2. **Tuples**
+   - Ordered, immutable sequences: `(1, 2, 3)`
+   - Often used for fixed collections
+
+3. **Sets**
+   - Unordered, unique elements: `{1, 2, 3}`
+   - Set operations: union, intersection
+
+4. **Dictionaries**
+   - Key-value pairs: `{"name": "John", "age": 30}`
+   - Methods: `keys()`, `values()`, `items()`
+
+# Libraries for Data Handling
+
+## NumPy
+- Foundation for numerical computing in Python
+- Key features:
+  - Multi-dimensional arrays
+  - Mathematical functions
+  - Linear algebra operations
+```python
+import numpy as np
+arr = np.array([1, 2, 3])
+arr2d = np.array([[1, 2], [3, 4]])
+zeros = np.zeros((3, 3))
+```
+
+## Pandas
+- Primary tool for data manipulation and analysis
+- Key data structures:
+  1. **Series**: 1D labeled array
+     - Created from lists, arrays, or dictionaries
+     - Supports indexing and vectorized operations
+  2. **DataFrame**: 2D labeled data structure
+     - Tables with rows and columns
+     - Multiple data types per column
+     - Powerful indexing and filtering
+
+### Core Features
+- Data Import/Export:
+  - CSV: `read_csv()`, `to_csv()`
+  - JSON: `read_json()`, `to_json()`
+  - XML: `read_xml()`, `to_xml()`
+  - Excel: `read_excel()`, `to_excel()`
+  - SQL: `read_sql()`, `to_sql()`
 
 # File Formats for Data Exchange
 ## 1. **Plain Text**
@@ -69,6 +152,30 @@
 - **Binary Formats**: HDF5, netCDF for scientific data.
 - **Image Formats**: PNG, JPEG.
 - **Video Formats**: MP4.
+
+## Python Data Import/Export
+- **CSV Files**:
+```python
+# Import
+df = pd.read_csv('data.csv')
+# Export
+df.to_csv('output.csv', index=False)
+```
+
+- **JSON**:
+```python
+# Import
+df = pd.read_json('data.json')
+# Export
+df.to_json('output.json')
+```
+
+- **XML**:
+```python
+import xml.etree.ElementTree as ET
+tree = ET.parse('data.xml')
+root = tree.getroot()
+```
 
 # Import/Export of Data-Exchange Files in R
 ## 1. **Plain Text Files**
