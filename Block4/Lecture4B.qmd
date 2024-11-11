@@ -1,0 +1,31 @@
+---
+title: "Quarto with R and Python"
+format: html
+---
+
+```{r setup}
+library(reticulate)
+```
+
+```{r}
+x <- 1:10
+for (i in x) {
+    if (i %% 2 == 0) {
+        print("Even")
+    } else {
+        print("Odd")
+    }
+}
+```
+
+```{python}
+for i in range(10):
+    if i % 2 == 0:
+        print(f"{i} is even")
+    else:
+        print(f"{i} is odd")
+```
+
+```{python}
+print("Hello, world!")
+```

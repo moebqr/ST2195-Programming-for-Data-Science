@@ -1,0 +1,81 @@
+---
+title: "Control Structures"
+output: html_document
+---
+
+## If else
+
+```{r}
+x <- 1:10
+ifelse(x %% 5 == 0, "XXX", as.character(x))
+```
+```{r}
+x <- 1:10
+ifelse(x %% 2 == 0, "even", "odd")
+```
+
+## Iterations
+```{r}
+x <- 1:10
+for (i in x) {
+    if (i %% 2 == 0) {
+        print("Even")
+    } else {
+        print("Odd")
+    }
+}
+```
+
+```{python}
+x <- 1:10
+for i in x:
+    if i %% 2 == 0:
+        print(f"{x} is even")
+    else:
+        print(f"{x} is odd")
+```
+
+## Functions
+
+```{r}
+power_function <- function(x, y) {
+    result <- x^y
+    print(paste(x, "raised to the power of", y, "is", result))
+    return(result)
+}
+
+# Example usage
+power_function(2, 3)
+```
+
+### Default arguments
+
+```{r}
+power_function <- function(x, y = 2) {
+    result <- x^y
+    print(paste(x, "raised to the power of", y, "is", result))
+    return(result)
+}
+
+power_function(3)
+```
+
+```{r}
+cm_to_in <- function(cm) {
+    inches <- cm / 2.54
+    return(inches)
+}
+
+cm_to_in(10)
+
+# Nested function
+in_to_yd <- function(inches) {
+    yards <- inches / 36
+    return(yards)
+}
+# Convert 10 cm to inches, then to yards
+in_to_yd(cm_to_in(10))
+
+
+```
+
