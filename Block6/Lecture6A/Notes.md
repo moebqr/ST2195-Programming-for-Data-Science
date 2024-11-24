@@ -1,0 +1,2 @@
+# Data Wrangling
+Data wrangling, simply put, is the process of preparing raw data for analysis. It involves cleaning, transforming, and organizing data to make it suitable for various analytical purposes. This crucial step in the data science workflow typically includes activities such as handling missing values, removing duplicates, correcting inconsistencies, and converting data into appropriate formats. By ensuring data quality and structure, data wrangling enables more accurate analyses, reliable machine learning models, and meaningful insights.
