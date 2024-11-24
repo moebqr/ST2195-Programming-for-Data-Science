@@ -7,10 +7,10 @@ Welcome to the ST21955 Programming for Data Science repository! This repository 
 The ST21955 module is divided into the following blocks:
 
 - [x] **Block 1: Introduction to Data Science** 📊
-- [ ] **Block 2: Data** 🗄️
-- [ ] **Block 3: Introduction to Relational Database Management Systems** 🗃️
-- [ ] **Block 4: Programming Concepts** 💻
-- [ ] **Block 5: Variables, Mutability and Aliasing in Python and R** 🔧
+- [x] **Block 2: Data** 🗄️
+- [x] **Block 3: Introduction to Relational Database Management Systems** 🗃️
+- [x] **Block 4: Programming Concepts** 💻
+- [x] **Block 5: Variables, Mutability and Aliasing in Python and R** 🔧
 - [ ] **Block 6: Introduction to Data Wrangling** 🛠️
 - [ ] **Block 7: Exploratory Analysis and Data Visualisation** 🔍
 - [ ] **Block 8: Graphics and Data Visualisation in Python** 📊
