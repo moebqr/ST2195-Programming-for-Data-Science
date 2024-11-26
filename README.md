@@ -1,6 +1,6 @@
 # 📘 ST2195 Programming for Data Science - Notes & Exercises
 
-Welcome to the ST21955 Programming for Data Science repository! This repository contains my notes, exercises, programs, and other materials related to the module. The content is structured based on the various blocks covered in the class, aiming to provide a comprehensive overview and hands-on practice in data science programming.
+Welcome to the ST2195 Programming for Data Science repository! This repository contains my notes, exercises, programs, and other materials related to the module. The content is structured based on the various blocks covered in the class, aiming to provide a comprehensive overview and hands-on practice in data science programming.
 
 ## 🗂 Course Overview
 
