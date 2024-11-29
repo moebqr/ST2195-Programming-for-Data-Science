@@ -15,7 +15,8 @@
 
 ## 2. Control Flow
 
-### If-Else Statements```python
+### If-Else Statements
+```python
 if score >= 70:
     print("Distinction")
 elif score >= 60:
