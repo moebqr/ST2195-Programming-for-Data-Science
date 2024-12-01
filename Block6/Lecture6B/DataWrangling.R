@@ -45,3 +45,18 @@ Names_lower <- lapply(X = Name_list, FUN = tolower)
 Names_lower
 
 str(Names_lower)
+
+raise_power <- function(x, power) {
+    x^power
+}
+
+numbers <- list(1:5)
+
+sapply(numbers, raise_power, power = 3)
+
+matrix(c(rep(1, 3), rep(2, 3), rep(3, 3)), nrow = 3, byrow = TRUE)
+
+# 1 one time (1^2), 2 four times (2^2), 3 nine times (3^2)
+mapply(rep, 1:3, (1:3)^2)
+
+?sweep()
