@@ -1,0 +1,1 @@
+write.table(airquality, file = "airquality.csv", sep = ",", row.names = FALSE)
