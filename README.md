@@ -3,7 +3,7 @@
 ![UoL Logo](UoL_logo.png)
 > **⚠️ DISCLAIMER:** This repository is a personal collection of study materials and is not affiliated with, endorsed by, or connected to the University of London or the London School of Economics in any way. All content is created and maintained independently by students for educational purposes only.
 
-Welcome to the ST21955 Programming for Data Science repository! This repository contains my notes, exercises, programs, and other materials related to the module. The content is structured based on the various blocks covered in the class, aiming to provide a comprehensive overview and hands-on practice in data science programming.
+Welcome to the ST2195 Programming for Data Science repository! This repository contains my notes, exercises, programs, and other materials related to the module. The content is structured based on the various blocks covered in the class, aiming to provide a comprehensive overview and hands-on practice in data science programming.
 
 ## 🗂 Course Overview
 
@@ -43,7 +43,7 @@ Feel free to browse through the notes and exercises for reference. These materia
 
 ## 🤝 Contribution
 
-If you are also taking the ST21955 module and want to contribute, follow these simple steps:
+If you are also taking the ST2195 module and want to contribute, follow these simple steps:
 
 1. **Fork this repository** by clicking the "Fork" button in the top-right corner of this page to create your own copy.
 2. **Clone your fork** to your local machine using:
@@ -64,7 +64,7 @@ If you are also taking the ST21955 module and want to contribute, follow these s
 
 Feel free to ask questions if you get stuck—contributing is a learning process!
 
-All contributions should be directly relevant to the ST21955 Programming for Data Science module.
+All contributions should be directly relevant to the ST2195 Programming for Data Science module.
 
 ## 📜 Copyright Notice
 
