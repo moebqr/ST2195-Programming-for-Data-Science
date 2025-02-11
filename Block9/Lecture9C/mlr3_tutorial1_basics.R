@@ -72,6 +72,9 @@ summary(learner_logreg$model)
 # Training - Random Forest (ranger)
 # By selecting importance = "permutation" the learner does feature importance determination
 
+# install.packages("ranger")
+# library("ranger")
+
 learner_rf = lrn("classif.ranger", importance = "permutation")
 learner_rf$train(task, row_ids = train_set)
 
